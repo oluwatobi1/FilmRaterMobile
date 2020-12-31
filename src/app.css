@@ -34,3 +34,10 @@ Button.-primary {
     margin: 5 0;
 
 }
+
+.form-control {
+    border-bottom-color: rgb(112, 5, 103);
+    border-bottom-width: 2;
+    margin: 5 10;
+    padding: 10;
+}
