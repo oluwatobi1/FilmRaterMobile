@@ -1,13 +1,10 @@
 <StackLayout>
-    <Label text="lorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadf"></Label>
-
-    <Label text="lorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadflorem elecadfddsfdsfsadf"></Label>
-
-    <TextField
+       <TextField
     hint="Challenge Here"
+    marginTop="100"
      [(ngModel)]="challengeDescription"></TextField>
 
-     <Button (tap)="onSetChallenge()"text="Set Challenge"></Button>
+     <Button class="btn" (tap)="onSetChallenge()"text="Set Challenge"></Button>
 
-    <Label [text]="currentChallenge"></Label>
+    <Label class="title" [text]="currentChallenge"></Label>
 </StackLayout>
