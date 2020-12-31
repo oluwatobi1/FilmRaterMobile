@@ -4,7 +4,10 @@ import { NativeScriptFormsModule, NativeScriptModule } from "@nativescript/angul
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
+import { AuthComponent } from "./auth/auth.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
+import { HttpClientModule } from "@angular/common/http";
+
 
 @NgModule({
     bootstrap: [
@@ -13,11 +16,13 @@ import { ItemDetailComponent } from "./item/item-detail.component";
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        HttpClientModule,
     ],
     declarations: [
         AppComponent,
         ItemsComponent,
+        AuthComponent,
         ItemDetailComponent,
     ],
     providers: [],
